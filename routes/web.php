@@ -17,4 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hakkimda', [\App\Http\Controllers\HomeController::class, 'showView']);
+Route::get('/kullanicilar', [\App\Http\Controllers\HomeController::class, 'showUsers']);
+Route::get('/urunler', [\App\Http\Controllers\HomeController::class, 'showProducts']);
+Route::get('/satislar', [\App\Http\Controllers\HomeController::class, 'showSales']);

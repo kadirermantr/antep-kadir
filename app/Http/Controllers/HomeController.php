@@ -2,15 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    function showView() {
-        $name = "Kadir";
-        $city = "Bursa";
-        $department = "Computer Engineer";
+    function showUsers() {
+        $users =  DB::table('users')->get();
+        return view('kullanicilar', compact('users'));
+    }
 
-        return view('hakkimda', compact('name', 'city', 'department'));
+    function showProducts() {
+        $products =  DB::table('products')->get();
+        return view('urunler', compact('products'));
+    }
+
+    function showSales() {
+        $sales =  DB::table('user_products')
+            ->join('users', 'user_products.user_id', '=', 'users.id')
+            ->join('products', 'user_products.product_id', '=', 'products.id')
+            ->select('user_products.*', 'users.name', 'products.pName', 'products.price')
+            ->get();
+
+            return view('satislar', compact('sales'));
+
+            //die();
+            //dd($sales);
+
     }
 }
