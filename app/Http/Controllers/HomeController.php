@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
+    function showMyAbout() {
+        $name = "Kadir";
+        $job = "Bilgisayar Mühendisliği";
+        $city = "Bursa";
+
+        return view('hakkimda', compact('name', 'job', 'city'));
+    }
+
     function showUsers() {
-        $users =  DB::table('users')->get();
+        //$users =  DB::table('users')->get();
+        $users = User::all();
         return view('kullanicilar', compact('users'));
     }
 
@@ -27,6 +37,5 @@ class HomeController extends Controller
 
             //die();
             //dd($sales);
-
     }
 }

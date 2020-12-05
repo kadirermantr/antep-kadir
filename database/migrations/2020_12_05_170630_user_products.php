@@ -19,8 +19,18 @@ class UserProducts extends Migration
             $table->integer('product_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreign('product_id')->references('id')->on('products')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('user_id') // baglancak id
+            ->references('id') // baglana id
+            ->on('users') //baglanan table
+            ->cascadeOnDelete()
+                ->cascadeOnUpdate();
+
+
+            $table->foreign('product_id') // baglancak id
+            ->references('id') // baglana id
+            ->on('products') //baglanan table
+            ->cascadeOnDelete()
+                ->cascadeOnUpdate();
         });
     }
 
