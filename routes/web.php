@@ -28,10 +28,26 @@ Route::get('/kullanicilar', [\App\Http\Controllers\HomeController::class, 'showU
 Route::get('/urunler', [\App\Http\Controllers\HomeController::class, 'showProducts']);
 Route::get('/satislar', [\App\Http\Controllers\HomeController::class, 'showSales']);
 
+
 /*
- * Product İşlemleri
- *
+ *  Product İşlemleri
  */
-Route::get('/create-product',[ProductController::class,'create'])->name('product.create');
-Route::post('/save-product',[ProductController::class,'store'])->name('product.save');
-Route::get('/show-product',[ProductController::class,'index'])->name('product.show');
+Route::get('/show-products', [\App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+Route::get('/create-products', [\App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
+Route::get('/save-products', [\App\Http\Controllers\ProductController::class, 'store'])->name('product.save');
+Route::get('/export-products', [\App\Http\Controllers\ProductController::class, 'export'])->name('product.export');
+
+
+/*
+ *  Slider İşlemleri
+ */
+Route::get('/show-sliders', [\App\Http\Controllers\SliderController::class, 'index'])->name('slider.index');
+Route::get('/delete-slider/{id}', [\App\Http\Controllers\SliderController::class, 'destroy'])
+    ->name('delete.slider')->where(array('id' => '[0-9]+'));
+
+
+/*
+ * Kategori İşlemler
+ */
+Route::get('/upload-categories', [\App\Http\Controllers\CategoryController::class, 'upload'])->name('category.upload');
+Route::post('/import-categories', [\App\Http\Controllers\CategoryController::class, 'import'])->name('category.import');

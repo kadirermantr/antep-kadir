@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ProductExport;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductController extends Controller
 {
@@ -28,7 +30,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('product.create');
+        $users = User::all();
+        $categories = Categories::all();
+        return  view('products.create', compact('categories','users'));
     }
 
     /**
@@ -98,5 +102,9 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+    }
+
+    public function export() {
+        return Excel::download(new ProductExport, 'products.xlsx');
     }
 }

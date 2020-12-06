@@ -6,11 +6,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Featured Product</h2>
+                        <h2>Özel Ürünler</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
-                            <li class="active" data-filter="*">All</li>
+                            <li class="active" data-filter="*">Hepsi</li>
                             @foreach($categories as $category)
                                 <li data-filter=".{{$category->name}}">{{$category->name}}</li>
                             @endforeach
@@ -38,6 +38,10 @@
                 </div>
                 @endforeach
             </div>
+
+            <form action="{{route('product.export')}}" method="get">
+                <button type="submit" class="btn btn-primary">İndir</button>
+            </form>
         </div>
     </section>
 @endsection

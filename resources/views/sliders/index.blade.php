@@ -21,20 +21,20 @@
 </head>
 <body>
 
-<h2>Satışlar</h2>
+<h2>Sliders</h2>
 
 <table>
     <tr>
-        <th>Ad</th>
-        <th>Ürün</th>
-        <th>Fiyatı</th>
+        <td>Adı</td>
+        <td>Resim</td>
+        <td>İşlem</td>
     </tr>
 
-    @foreach($sales as $sale)
+    @foreach($sliders as $slider)
         <tr>
-            <td>{{$sale->name}}</td>
-            <td>{{$sale->productName}}</td>
-            <td>{{$sale->price}}</td>
+            <td>{{$slider->name}}</td>
+            <td>{{$slider->photo}}</td>
+            <td><a href="{{route('delete.slider',$slider->id)}}">Delete</a></td>
         </tr>
     @endforeach
 </table>

@@ -30,7 +30,7 @@ class HomeController extends Controller
         $sales =  DB::table('user_products')
             ->join('users', 'user_products.user_id', '=', 'users.id')
             ->join('products', 'user_products.product_id', '=', 'products.id')
-            ->select('user_products.*', 'users.name', 'products.pName', 'products.price')
+            ->select('user_products.*', 'users.name', 'products.productName', 'products.price')
             ->get();
 
             return view('satislar', compact('sales'));
