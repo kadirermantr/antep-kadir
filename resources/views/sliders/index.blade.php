@@ -25,6 +25,7 @@
 
 <table>
     <tr>
+        <td>No</td>
         <td>Adı</td>
         <td>Resim</td>
         <td>İşlem</td>
@@ -32,6 +33,7 @@
 
     @foreach($sliders as $slider)
         <tr>
+            <td>{{$slider->id}}</td>
             <td>{{$slider->name}}</td>
             <td>{{$slider->photo}}</td>
             <td><a href="{{route('delete.slider',$slider->id)}}">Delete</a></td>

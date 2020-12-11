@@ -25,6 +25,7 @@
 
 <table>
     <tr>
+        <th>No</th>
         <th>Adı</th>
         <th>Email</th>
         <th>Şifre</th>
@@ -32,6 +33,7 @@
 
     @foreach($users as $user)
     <tr>
+        <td>{{$user->id}}</td>
         <td>{{$user->name}}</td>
         <td>{{$user->email}}</td>
         <td>{{$user->password}}</td>

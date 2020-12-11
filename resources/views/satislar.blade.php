@@ -25,6 +25,7 @@
 
 <table>
     <tr>
+        <th>No</th>
         <th>Ad</th>
         <th>Ürün</th>
         <th>Fiyatı</th>
@@ -32,6 +33,7 @@
 
     @foreach($sales as $sale)
         <tr>
+            <td>{{$sale->id}}</td>
             <td>{{$sale->name}}</td>
             <td>{{$sale->productName}}</td>
             <td>{{$sale->price}}</td>

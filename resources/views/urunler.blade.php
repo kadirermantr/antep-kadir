@@ -25,12 +25,14 @@
 
 <table>
     <tr>
+        <th>No</th>
         <th>Ürün</th>
         <th>Fiyatı</th>
     </tr>
 
     @foreach($products as $product)
         <tr>
+            <td>{{$product->id}}</td>
             <td>{{$product->productName}}</td>
             <td>{{$product->price}}</td>
         </tr>

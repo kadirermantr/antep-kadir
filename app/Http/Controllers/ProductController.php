@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Exports\ProductExport;
 use App\Models\Product;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -13,20 +14,20 @@ class ProductController extends Controller
      * Display a listing of the resource.
      * Ürün listesini göreceğimiz yer
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
         // $product=Product::all();
-        $product=Product::with(['user'])->get();
-        return view('product.index', compact('product'));
+        $products = Product::with(['user'])->get();
+        return view('products.index', compact('products'));
     }
 
     /**
      * Show the form for creating a new resource.
      * Ürün ekleme formu
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function create()
     {
@@ -106,5 +107,11 @@ class ProductController extends Controller
 
     public function export() {
         return Excel::download(new ProductExport, 'products.xlsx');
+    }
+
+    public function bannerShow() {
+        Product::with(['photo'])->get();
+        //yeni bir veritabanı tablosu oluştur
+
     }
 }
