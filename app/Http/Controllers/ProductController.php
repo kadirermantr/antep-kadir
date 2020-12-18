@@ -19,8 +19,26 @@ class ProductController extends Controller
     public function index()
     {
         // $product=Product::all();
-        $products = Product::with(['user'])->get();
-        return view('products.index', compact('products'));
+        //$products = Product::with(['user'])->get();
+        //return view('products.index', compact('products'));
+
+
+        //order by --> sıralama
+        //desc --> sondan başa
+        // asc --> baştan sonra
+        // orderBy('id', 'desc)     orderByDesc('id')       latest('id)
+
+        //$products = Product::with(['user'])->orderByDesc('id')->take(3)->get();
+        //return view('home', compact('products'));
+
+
+        return $products = Product::with(['user'])->get();
+        // select('id', 'name');
+
+        /*
+        $products = Product::with(['user'])->paginate('5');
+        return view('home', compact('products'));
+        */
     }
 
     /**

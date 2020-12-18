@@ -28,11 +28,10 @@ Route::get('/kullanicilar', [\App\Http\Controllers\HomeController::class, 'showU
 Route::get('/urunler', [\App\Http\Controllers\HomeController::class, 'showProducts']);
 Route::get('/satislar', [\App\Http\Controllers\HomeController::class, 'showSales']);
 
-
 /*
  *  Product İşlemleri
  */
-//Route::get('/show-products', [\App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+Route::get('/show-products', [\App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
 //Route::get('/create-products', [\App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
 //Route::get('/save-products', [\App\Http\Controllers\ProductController::class, 'store'])->name('product.save');
 Route::get('/export-products', [\App\Http\Controllers\ProductController::class, 'export'])->name('product.export');
@@ -47,8 +46,14 @@ Route::get('/delete-slider/{id}', [\App\Http\Controllers\SliderController::class
 
 
 /*
- * Kategori İşlemler
+ * Kategori İşlemleri
  */
 Route::get('/upload-categories', [\App\Http\Controllers\CategoryController::class, 'upload'])->name('category.upload');
 Route::post('/import-categories', [\App\Http\Controllers\CategoryController::class, 'import'])->name('category.import');
 
+
+/*
+ * Login İşlemleri
+*/
+Route::get('/forgot-password', [\App\Http\Controllers\PasswordController::class, 'forgot'])->name('login.forgot-password');
+Route::post('/send-password', [\App\Http\Controllers\PasswordController::class, 'send'])->name('login.send-password');

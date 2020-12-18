@@ -6,6 +6,7 @@ use App\Models\Banner;
 use App\Models\Blog;
 use App\Models\Categories;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ProjeController extends Controller

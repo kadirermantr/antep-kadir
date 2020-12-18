@@ -38,4 +38,10 @@ class HomeController extends Controller
             //die();
             //dd($sales);
     }
+
+    function forgottenPassword() {
+        $users = User::all();
+        return view('auth.forgot-password', compact('users'));
+    }
+
 }
