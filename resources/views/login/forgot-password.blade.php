@@ -14,11 +14,10 @@
 
 <h2>Şifremi Unuttum</h2>
 
-Telefon numaranızı başında 0 olmadan giriniz.<br />
-<small>Format: 905551112233</small><br><br>
+<small>Format: 05551112233</small><br><br>
 
 <form action="{{route('login.send-password')}}" method="post" class="form-inline">
-    <input type="tel" name="phone" class="form-control mb-2 mr-sm-2" id="telephone" placeholder="905551112233" pattern="[0-9]{12}" required>
+    <input type="tel" name="phone" class="form-control mb-2 mr-sm-2" id="telephone" placeholder="05551112233" pattern="[0-9]{11}" required>
     @csrf
     <button type="submit" class="btn btn-primary mb-2">Gönder</button>
 </form>

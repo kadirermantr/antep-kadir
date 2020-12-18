@@ -55,5 +55,6 @@ Route::post('/import-categories', [\App\Http\Controllers\CategoryController::cla
 /*
  * Login İşlemleri
 */
-Route::get('/forgot-password', [\App\Http\Controllers\PasswordController::class, 'forgot'])->name('login.forgot-password');
-Route::post('/send-password', [\App\Http\Controllers\PasswordController::class, 'send'])->name('login.send-password');
+Route::get('/login', [\App\Http\Controllers\LoginController::class, 'index'])->name('login.index');
+Route::get('/forgot-password', [\App\Http\Controllers\LoginController::class, 'forgot'])->name('login.forgot-password');
+Route::post('/send-password', [\App\Http\Controllers\LoginController::class, 'send'])->name('login.send-password');
