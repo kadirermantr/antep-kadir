@@ -131,6 +131,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/clxcommunications/sdk-xms" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/css" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/ui" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

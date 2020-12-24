@@ -119,7 +119,7 @@
                             </ul>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="#"><i class="fa fa-user"></i> Giriş Yap</a>
+                            <a href="{{route('login.index')}}"><i class="fa fa-user"></i> Giriş Yap</a>
                         </div>
                     </div>
                 </div>

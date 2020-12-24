@@ -11,9 +11,9 @@ class Product extends Model
 
     // İlişkili olduğu alanlar
 
-    public function user() {
-        //ürünü çok kişi alabilir
-        return $this->hasMany('App\Models\User', 'id', 'created_by');
+    public  function user()
+    {
+        return $this->hasMany('App\Models\User','id','created_by');
     }
 
     public function get_Category()

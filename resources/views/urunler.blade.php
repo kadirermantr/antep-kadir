@@ -28,6 +28,7 @@
         <th>No</th>
         <th>Ürün</th>
         <th>Fiyatı</th>
+        <th>Ekleyen</th>
     </tr>
 
     @foreach($products as $product)
@@ -35,6 +36,7 @@
             <td>{{$product->id}}</td>
             <td>{{$product->productName}}</td>
             <td>{{$product->price}}</td>
+            <td>{{$product->user[0]->name}}</td>
         </tr>
     @endforeach
 </table>

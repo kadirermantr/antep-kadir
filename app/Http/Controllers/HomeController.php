@@ -33,10 +33,10 @@ class HomeController extends Controller
             ->select('user_products.*', 'users.name', 'products.productName', 'products.price')
             ->get();
 
-            return view('satislar', compact('sales'));
+        return view('satislar', compact('sales'));
 
-            //die();
-            //dd($sales);
+        //die();
+        //dd($sales);
     }
 
     function forgottenPassword() {

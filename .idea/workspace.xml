@@ -20,14 +20,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce5dc0ca-ce53-4e36-a5a1-080ad51366e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/login/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/UploadPaths.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/banner/banner-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/cat-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/cat-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/cat-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/cat-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/categories/cat-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/featured/feature-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/latest-product/lp-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/latest-product/lp-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/latest-product/lp-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products_images/product_5fe322f3bee8f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products_images/product_5fe32369ea399.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products_images/product_5fe32401c054d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products_images/product_5fe498e6ba138.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/antep-kadir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/antep-kadir.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_13_110227_add_phone_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_213429_add_phone_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_17_134508_add_usersname_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_18_213850_add_username_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login/forgot-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/forgot-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/language.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/language.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_blog-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_blog-details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_blog-sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_blog-sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_blog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_checkout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_checkout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_home-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_home-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_shop-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_shop-details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_shop-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_shop-grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_shoping-cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_shoping-cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/_variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/urunler.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/urunler.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +243,7 @@
       <path value="$PROJECT_DIR$/vendor/clxcommunications/sdk-xms" />
       <path value="$PROJECT_DIR$/vendor/bootstrap/css" />
       <path value="$PROJECT_DIR$/vendor/bootstrap/js" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kvxOlUUhMnZjeZ3BKP4upYLBmQ" />
@@ -211,10 +273,11 @@
       <recent name="C:\Users\kadir\www\antep-kadir\app\Models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kadir\www\antep-kadir\app\Helpers" />
+      <recent name="C:\Users\kadir\www\antep-kadir\app" />
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views\login" />
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views\layouts" />
       <recent name="C:\Users\kadir\www\antep-kadir\resources\views" />
-      <recent name="C:\Users\kadir\www\antep-kadir\resources\views\products" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.antep-kadir">
@@ -276,7 +339,12 @@
       <workItem from="1608301199660" duration="806000" />
       <workItem from="1608322958059" duration="599000" />
       <workItem from="1608324389472" duration="98000" />
-      <workItem from="1608324517779" duration="3022000" />
+      <workItem from="1608324517779" duration="12375000" />
+      <workItem from="1608402479995" duration="2262000" />
+      <workItem from="1608418284793" duration="342000" />
+      <workItem from="1608463268380" duration="7610000" />
+      <workItem from="1608720614121" duration="1882000" />
+      <workItem from="1608810131405" duration="8171000" />
     </task>
     <servers />
   </component>

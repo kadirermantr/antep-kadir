@@ -12,10 +12,11 @@ class LoginController extends Controller
     public function index()
     {
         return view('login.index');
-    }public function forgot()
-{
-    return view('login.forgot-password');
-}
+    }
+    public function forgot()
+    {
+        return view('login.forgot-password');
+    }
 
     public function send(Request $request)
     {

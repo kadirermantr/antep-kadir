@@ -25,16 +25,16 @@ Route::get('/', [\App\Http\Controllers\ProjeController::class, 'index']);
 
 Route::get('/hakkimda', [\App\Http\Controllers\HomeController::class, 'showMyAbout']);
 Route::get('/kullanicilar', [\App\Http\Controllers\HomeController::class, 'showUsers']);
-Route::get('/urunler', [\App\Http\Controllers\HomeController::class, 'showProducts']);
 Route::get('/satislar', [\App\Http\Controllers\HomeController::class, 'showSales']);
 
 /*
  *  Product İşlemleri
  */
+Route::get('/urunler', [\App\Http\Controllers\ProductController::class, 'index']);
 Route::get('/show-products', [\App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
-//Route::get('/create-products', [\App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
-//Route::get('/save-products', [\App\Http\Controllers\ProductController::class, 'store'])->name('product.save');
 Route::get('/export-products', [\App\Http\Controllers\ProductController::class, 'export'])->name('product.export');
+Route::get('/add-product', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+Route::post('/save-product', [\App\Http\Controllers\ProductController::class, 'save'])->name('product.save');
 
 
 /*
@@ -58,3 +58,4 @@ Route::post('/import-categories', [\App\Http\Controllers\CategoryController::cla
 Route::get('/login', [\App\Http\Controllers\LoginController::class, 'index'])->name('login.index');
 Route::get('/forgot-password', [\App\Http\Controllers\LoginController::class, 'forgot'])->name('login.forgot-password');
 Route::post('/send-password', [\App\Http\Controllers\LoginController::class, 'send'])->name('login.send-password');
+
